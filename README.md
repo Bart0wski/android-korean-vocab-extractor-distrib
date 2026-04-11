@@ -23,6 +23,8 @@ Get the latest APK from the [**Releases**](../../releases/latest) page.
 
 Go to the **Settings** tab and paste your Gemini API key. You can get a free key at [Google AI Studio](https://aistudio.google.com/app/api-keys). Tap **Save**, then **Test** to verify it works. You can also set your default Anki deck name and choose the Gemini model here.
 
+> **Getting your API key:** A Google Cloud project is required before generating a key. If this is your first time, don't worry — Google AI Studio will prompt you to create a project automatically during the API key creation flow. Just follow the on-screen steps and your key will be ready in under a minute.
+
 <p align="center">
   <img src="Screenshots/Screenshot_settings.png" width="280" alt="Settings screen showing Gemini API key field">
 </p>

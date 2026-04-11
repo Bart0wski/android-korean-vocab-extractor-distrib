@@ -84,6 +84,30 @@ The **Vocabulary** tab shows your full word list. You can:
 | Plain text | Paste any Korean text directly |
 | PDF | Up to 10 pages per file |
 | Images | JPEG, PNG screenshots of Korean content |
+| CSV | Import existing vocabulary lists — see format below |
+
+### CSV Import Format
+
+The file must be UTF-8 encoded (Excel BOM is handled automatically). Two columns are required; the rest are optional:
+
+| Column | Header name | Required | Description |
+|---|---|---|---|
+| Korean word | `korean` | Yes | The Korean word or expression |
+| French translation | `french` | Yes | Translation (separate meanings with `,`) |
+| Example sentence | `phrase` | No | An example sentence in Korean |
+| Part of speech | `part_of_speech` | No | e.g. `Noun`, `Verb`, `Adjective`, `Adverb` |
+| Thematic tag | `thematic_tag` | No | e.g. `Chapter 3`, `Drama vocab` |
+
+**Example:**
+
+```csv
+korean,french,phrase,part_of_speech,thematic_tag
+일찍,tôt,저는 매일 일찍 일어나요.,Adverb,Daily life
+자다,dormir,밤에 일찍 자요.,Verb,Daily life
+건강,santé,,Noun,
+```
+
+If no header row is present, columns are read positionally in the order above.
 
 ## Release Notes
 

@@ -13,7 +13,7 @@ Get the latest APK from the [**Releases**](../../releases/latest) page.
 - **AI-powered extraction** — paste text or upload PDF/image files; Gemini identifies Korean words automatically
 - **Anki export** — generates `.apkg` files ready to import into Anki, including Korean, romanization, French translation, and part of speech
 - **Vocabulary history** — SQLite-backed log of all extracted words with search and filtering
-- **Batch processing** — process up to 10 files at a time
+- **Batch processing** — process up to 10 files at a time; PDFs are split page by page (max 10 pages total across all files) for more thorough extraction
 - **Configurable models** — choose between Gemini Flash and Pro variants
 - **Secure key storage** — API key stored via Android Keystore, never hard-coded
 
@@ -37,7 +37,7 @@ Switch to the **Input** tab. Choose your source:
 
 - **Text** — paste any Korean text directly into the field and tap **Extract Vocabulary**.
 - **Image** — switch to the Image tab, tap **Choose Files** or **Take Photo** to import a screenshot or photo containing Korean.
-- **PDF** — switch to the PDF tab and select up to 10 PDF pages.
+- **PDF** — switch to the PDF tab and select up to 10 PDF files; each page is sent to Gemini individually (max 10 pages total) for maximum extraction accuracy.
 
 <p align="center">
   <img src="Screenshots/Screenshot_input_text.png" width="280" alt="Text input screen with Korean sentence">
@@ -84,7 +84,7 @@ The **Vocabulary** tab shows your full word list. You can:
 | Type | Details |
 |---|---|
 | Plain text | Paste any Korean text directly |
-| PDF | Up to 10 pages per file |
+| PDF | Split page by page — max 10 pages total across all imported files |
 | Images | JPEG, PNG screenshots of Korean content |
 | CSV | Import existing vocabulary lists — see format below |
 
@@ -112,6 +112,11 @@ korean,french,phrase,part_of_speech,thematic_tag
 If no header row is present, columns are read positionally in the order above.
 
 ## Release Notes
+
+### V0.5 — 2026-04-12
+
+- **Page-by-page PDF extraction** — each PDF page is now sent to Gemini as a separate request, preventing context-window truncation on long documents and extracting significantly more vocabulary
+- **10-page global cap** — total pages across all imported PDF files is capped at 10; pages beyond the limit are skipped with a warning
 
 ### V0.4 — 2026-04-11
 

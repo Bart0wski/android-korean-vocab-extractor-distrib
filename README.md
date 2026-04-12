@@ -79,6 +79,23 @@ The **Vocabulary** tab shows your full word list. You can:
 
 ---
 
+### Step 5 — Track your progress
+
+The **Stats** tab gives a live overview of your learning:
+
+- **TOPIK Milestone** — two circular gauges track progress toward TOPIK I (800 words, green) and TOPIK II (3 500 words, purple).
+- **Learning Velocity** — daily average over the last 30 days and a weekly bar chart to spot study streaks.
+- **Source Analysis** — donut chart breaking down vocabulary by import source (PDF · CSV · Image · Text) with a per-source session count.
+- **Breakdown** — horizontal bar chart of your vocabulary split by part of speech (Noun, Verb, Adjective…).
+
+<p align="center">
+  <img src="Screenshots/Screenshot_stats_1.png" width="280" alt="Stats screen showing TOPIK milestone gauges and learning velocity chart">
+  &nbsp;&nbsp;
+  <img src="Screenshots/Screenshot_stats_2.png" width="280" alt="Stats screen showing source analysis donut chart and part-of-speech breakdown">
+</p>
+
+---
+
 ## Supported Input Types
 
 | Type | Details |

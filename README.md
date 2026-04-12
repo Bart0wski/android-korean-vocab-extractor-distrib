@@ -134,6 +134,7 @@ If no header row is present, columns are read positionally in the order above.
 
 - **Page-by-page PDF extraction** — each PDF page is now sent to Gemini as a separate request, preventing context-window truncation on long documents and extracting significantly more vocabulary
 - **10-page global cap** — total pages across all imported PDF files is capped at 10; pages beyond the limit are skipped with a warning
+- **Clearer export icons** — the CSV and Anki export buttons in the Vocabulary screen now show the actual CSV file icon and the official Anki logo instead of generic icons
 
 ### V0.4 — 2026-04-11
 

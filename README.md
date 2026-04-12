@@ -74,7 +74,7 @@ The **Vocabulary** tab shows your full word list. You can:
 - **Select** words and export them as an Anki `.apkg` deck or a CSV file.
 
 <p align="center">
-  <img src="Screenshots/Screenshot_vocabulary.png" width="280" alt="Vocabulary screen showing 4 saved words with search and filter">
+  <img src="Screenshots/Screenshot_vocabulary.png?v=2" width="280" alt="Vocabulary screen showing 4 saved words with search and filter">
 </p>
 
 ---

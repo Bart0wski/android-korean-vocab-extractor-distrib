@@ -132,6 +132,7 @@ If no header row is present, columns are read positionally in the order above.
 
 ### V0.5 — 2026-04-12
 
+- **Updated Gemini model list** — default is now `gemini-3.1-flash-lite`; available models updated to the latest Gemini 2.5 and 3.x lineup (`gemini-2.5-pro`, `gemini-2.5-flash`, `gemini-3-flash-preview`, `gemini-3.1-flash-lite`, `gemini-3.1-pro-preview`)
 - **Page-by-page PDF extraction** — each PDF page is now sent to Gemini as a separate request, preventing context-window truncation on long documents and extracting significantly more vocabulary
 - **10-page global cap** — total pages across all imported PDF files is capped at 10; pages beyond the limit are skipped with a warning
 - **Clearer export icons** — the CSV and Anki export buttons in the Vocabulary screen now show the actual CSV file icon and the official Anki logo instead of generic icons
